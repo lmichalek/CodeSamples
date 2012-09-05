@@ -27,11 +27,9 @@ cd MASTER
 if [ $# -lt 2 ]
 then
 	java HW3Tester
-	rm ListPractice.*
-	cd ..
 else
-    method=$2
-	java PrintMethod "$method"
-	rm ListPractice.*
-	cd ..
+	java PrintMethod "$2"
 fi
+
+rm ListPractice.*
+cd ..
